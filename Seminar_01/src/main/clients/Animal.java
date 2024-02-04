@@ -2,7 +2,7 @@ package main.clients;
 
 import java.time.LocalDate;
 
-public class Animal {
+public abstract class Animal {
 protected String nickName;
 protected Owner owner;
 protected LocalDate birthDate;
@@ -45,24 +45,22 @@ public Animal(String nickName, Owner owner, LocalDate birthDate, Illness illness
     public String getType(){
     return getClass().getSimpleName();
     }
-    public void lifeCycle(){
-    wakeUp();
-    swim();
-    toGo();
-    hunt();
-    fly();
-    eat();
-    sleep();
-    }
+//    public void lifeCycle(){
+//    wakeUp();
+//    swim();
+//    toGo();
+//    hunt();
+//    fly();
+//    eat();
+//    sleep();
+//    }
     private void wakeUp(){
         System.out.println(nickName + " waked up");
     }
     private void hunt(){
         System.out.println(nickName + " hunting");
     }
-    private void eat(){
-        System.out.println(nickName + " eating");
-    }
+    public abstract void eat();
     private void sleep(){
         System.out.println(nickName + " sleeping");
     }
