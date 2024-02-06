@@ -73,9 +73,7 @@ public Animal(String nickName, Owner owner, LocalDate birthDate, Illness illness
     public void fly(){
         System.out.println(nickName + " is flying");
     }
-    public void toGo(){
-        System.out.println(nickName + " is running");
-    }
+
     @Override
     public String toString() {
         return String.format("nickName = %s, birthDate = %s, owner = %s, illness = %s",
