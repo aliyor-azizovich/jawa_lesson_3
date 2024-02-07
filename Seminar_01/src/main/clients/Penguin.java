@@ -2,7 +2,7 @@ package main.clients;
 
 import java.time.LocalDate;
 
-public class Penguin extends Animal implements Goable{
+public class Penguin extends Animal implements Goable, Flyable, Huntable, Swimable{
     public Penguin(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
         super(nickName, owner, birthDate, illness);
     }
@@ -13,6 +13,10 @@ public class Penguin extends Animal implements Goable{
 
     @Override
     public void eat() {
+
+    }
+    @Override
+    public void swim() {
 
     }
 

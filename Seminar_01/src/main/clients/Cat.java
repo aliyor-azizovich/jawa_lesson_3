@@ -2,7 +2,7 @@ package main.clients;
 
 import java.time.LocalDate;
 
-public class Cat extends Animal implements Goable, Huntable{
+public class Cat extends Animal implements Goable, Huntable, Flyable, Swimable{
     public Cat(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
         super(nickName, owner, birthDate, illness);
     }
